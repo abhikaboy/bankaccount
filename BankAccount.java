@@ -20,4 +20,10 @@ public class BankAccount {
         routingNumber = rNum;
         totalBalance = totalB;
     }
+
+    public String toString() {
+        return customerName + "'s Bank account containing $" + accountBalance + " at " + bankName + " located at "
+                + bankAddress;
+    }
+
 }
