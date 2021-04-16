@@ -26,4 +26,10 @@ public class BankAccount {
                 + bankAddress;
     }
 
+    public BankAccount(int n, String p, String c){
+        accountNum = n;
+        password = p;
+        customerName = c;
+        accountBalance = 0;
+    }
 }
