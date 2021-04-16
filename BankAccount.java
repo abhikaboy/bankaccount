@@ -8,8 +8,13 @@ public class BankAccount {
     private static String routingNumber;
     private static int totalBalance;
 
-    public BankAccount
-    {
+    public BankAccount() {
 
     }
+
+    public String toString() {
+        return customerName + "'s Bank account containing $" + accountBalance + " at " + bankName + " located at "
+                + bankAddress;
+    }
+
 }
