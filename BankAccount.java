@@ -1,24 +1,21 @@
 public class BankAccount {
     private int accountNum;
-    private int accountBalance;
+    private double accountBalance;
     private String password;
     private String customerName;
-    private static String bankName;
-    private static String bankAddress;
-    private static String routingNumber;
-    private static int totalBalance;
+    private static String bankName = "";
+    private static String bankAddress = "";
+    private static String routingNumber = "";
+    private static double totalBalance = 0;
 
-    public BankAccount(int accountNum, int accountBalance, 
-    String password, String customerName, String bName, String bAddress, String rNum, int totalB)
+    public BankAccount(int accountNum, double accountBalance, 
+    String password, String customerName)
     {
         this.accountNum = accountNum;
         this.accountBalance = accountBalance;
         this.password = password;
         this.customerName = customerName;
-        bankName = bName;
-        bankAddress = bAddress;
-        routingNumber = rNum;
-        totalBalance = totalB;
+        totalBalance += accountBalance;
     }
 
     public String toString() {
