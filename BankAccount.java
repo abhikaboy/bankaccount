@@ -40,25 +40,39 @@ public class BankAccount {
         accountBalance = 0;
     }
 
+    public double getBalance() {
+        return accountBalance;
+    }
+
+    public static double getTotalBalance() {
+        return totalBalance;
+    }
+
+    public int getAccountNum() {
+        return accountNum;
+    }
+
     public void changePassword(String password) {
         this.password = password;
     }
 
-    public void setBankName(String bName) {
+    public static void setBankName(String bName) {
         bankName = bName;
     }
-    public void setBankAddress(String bAddress) {
+
+    public static void setBankAddress(String bAddress) {
         bankAddress = bAddress;
     }
-    public void setRoutingNumber(String rNumber) {
+
+    public static void setRoutingNumber(String rNumber) {
         routingNumber = rNumber;
     }
+
     public void deposit(double amount) {
-        if (amount >=0){
+        if (amount >= 0) {
             accountBalance += amount;
             totalBalance += amount;
-        }
-        else
+        } else
             System.out.println("Can't deposit a negative amount");
     }
 }
