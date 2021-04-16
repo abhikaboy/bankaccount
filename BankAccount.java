@@ -29,4 +29,8 @@ public class BankAccount {
         customerName = c;
         accountBalance = 0;
     }
+
+    public void changePassword(String password) {
+        this.password = password;
+    }
 }
