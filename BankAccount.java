@@ -33,4 +33,14 @@ public class BankAccount {
     public void changePassword(String password) {
         this.password = password;
     }
+
+    public void setBankName(String bName) {
+        bankName = bName;
+    }
+    public void setBankAddress(String bAddress) {
+        bankAddress = bAddress;
+    }
+    public void setRoutingNumber(String rNumber) {
+        routingNumber = rNumber;
+    }
 }
