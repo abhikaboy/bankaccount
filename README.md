@@ -2,8 +2,6 @@
 
 ## 4/16/2021
 
----
-
 Creating a bank account class to manage a bank account and a test class to test out the bank account class
 
 ### Contributions ( also visible in commit history )
