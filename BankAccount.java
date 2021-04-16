@@ -8,8 +8,15 @@ public class BankAccount {
     private static String routingNumber;
     private static int totalBalance;
 
-    public BankAccount
+    public BankAccount()
     {
 
+    }
+
+    Public BankAccount(int n, String p, String c){
+	accountNum = n;
+	password = p;
+	customerName = c;
+	accountBalance = 0;
     }
 }
